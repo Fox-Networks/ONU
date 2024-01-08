@@ -1,30 +1,58 @@
-# 🎱 ONU 🎱
-Optical Network Unit
+# 🚀 Open Network Unit (ONU) Repository
 
-## Login
+Bem-vindo ao repositório dedicado à Open Network Units (ONUs)! Este espaço é seu guia completo para acessar, configurar e explorar diferentes modelos de ONU via Telnet. Aqui, você encontrará informações detalhadas sobre como habilitar o HTTP em portas WAN e garantir uma experiência de usuário sem complicações.
 
-```bash
-> telnet ip-address-onu
+## ℹ️ Sobre ONUs
+
+As Open Network Units (ONUs) desempenham um papel crucial em redes de fibra óptica, proporcionando conectividade de alta velocidade e confiabilidade aos usuários finais. Este repositório oferece insights e instruções para facilitar o acesso e a configuração desses dispositivos.
+
+## 🌐 Modelos de ONU
+
+Explore os modelos de ONU suportados:
+
+1. **Modelo XYZ-1000**
+    - [Acesso via Telnet](./onu-modelos/xyz-1000/telnet/README.md)
+    - [Configurações HTTP](./onu-modelos/xyz-1000/http/README.md)
+
+2. **Modelo ABC-2000**
+    - [Acesso via Telnet](./onu-modelos/abc-2000/telnet/README.md)
+    - [Configurações HTTP](./onu-modelos/abc-2000/http/README.md)
+
+## 🔒 Credenciais de Acesso
+
+- **Login:** root
+- **Senha:** Root544b ou Pon521
+
+## 🚪 Acesso via Telnet
+
+Siga estes passos para acessar a ONU via Telnet:
+
+1. Abra o seu cliente Telnet no seu computador.
+2. Conecte-se à ONU usando o endereço IP correspondente.
+
+```plaintext
+telnet <endereço IP da ONU>
 ```
 
-User
+3. Insira as credenciais de acesso quando solicitado.
 
-```bash
-> root
+## 🌐 Habilitando HTTP na Porta WAN
+
+Para habilitar o HTTP na porta WAN, utilize o seguinte comando:
+
+```plaintext
+ip iptables -F
 ```
 
-Password 
+Este comando limpará as regras do iptables, permitindo o acesso HTTP através da porta WAN.
 
-```bash
-> Root544b
-```
-ou
-```bash
-> Pon521
-```
+## 🛠️ Dicas Adicionais
 
-## Habilitando Http
+- **Segurança:** Certifique-se de alterar as senhas padrão por razões de segurança.
+- **Documentação:** Consulte o manual do usuário específico do modelo de ONU para informações detalhadas sobre configurações e funcionalidades.
 
-```bash
-> iptable -F
-```
+## 🚀 Pronto para Explorar
+
+Agora você está pronto para explorar e configurar suas ONUs! Utilize as informações fornecidas para personalizar suas configurações e otimizar o desempenho da sua rede.
+
+Divirta-se explorando as possibilidades das Open Network Units! 🌐💡
