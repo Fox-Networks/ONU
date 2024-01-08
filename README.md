@@ -26,5 +26,5 @@ ou
 ## Habilitando Http
 
 ```bash
-> iptable -f
+> iptable -F
 ```
