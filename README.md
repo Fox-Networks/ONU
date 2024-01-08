@@ -10,11 +10,11 @@ As Open Network Units (ONUs) desempenham um papel crucial em redes de fibra ópt
 
 Explore os modelos de ONU suportados:
 
-1. **Modelo XYZ-1000**
+1. **Modelo da Think**
     - [Acesso via Telnet](./onu-modelos/xyz-1000/telnet/README.md)
     - [Configurações HTTP](./onu-modelos/xyz-1000/http/README.md)
 
-2. **Modelo ABC-2000**
+2. **Modelo Stavix**
     - [Acesso via Telnet](./onu-modelos/abc-2000/telnet/README.md)
     - [Configurações HTTP](./onu-modelos/abc-2000/http/README.md)
 
